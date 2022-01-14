@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}formulaire!
+{% endblock %}
+
+{% block body %}
+
+	{{form_start(form)}}
+	{{form_label(form.livres)}}
+	{{form_widget(form.livres)}}
+	{{form_label(form.auteurs)}}
+	{{form_widget(form.auteurs)}}
+
+	<br><br>
+	<button type="submit">Valider</button>
+	{{form_end(form)}}
+{% endblock %}
